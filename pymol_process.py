@@ -74,8 +74,7 @@ def pymol_process(docker_dir):
         cmd.png(os.path.join(protein_dir, f'{protein}_docking_area.png'), width=4000, height=4000, ray=0)
         print(f'{protein}_docking_area.png Done!')
 
-        cmd.delete("receptor")
-        cmd.delete("ligand_model1")
+        cmd.delete("all")
 
 if __name__ == '__main__':
     docker = os.path.join(os.getcwd(), 'protein')
