@@ -27,8 +27,8 @@ if __name__ == '__main__':
     for filename in os.listdir('./PDB'):
         file_path = os.path.join('./PDB', filename)
         files = {
-            'protein1': open(file_path, 'rb'),  # 输入蛋白1的 PDB 文件
-            'protein2': open(r'E:\Protein_Docking\5l71.pdb', 'rb'),  # 输入蛋白2的 PDB 文件
+            'protein1': open(file_path, 'rb'),
+            'protein2': open(r'E:\Protein_Docking\5l71.pdb', 'rb'),
         }
         submit(files,filename)
     print("Done!")
